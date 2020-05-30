@@ -13,8 +13,10 @@ class Perceptron {
         double threshold;
         double learningRate;
 
-        Perceptron(const double firstWeight, const double secondWeight, const double threshold, const double learningRate);
+        Perceptron(double firstWeight, double secondWeight, const double threshold, const double learningRate);
 
+        double activationFunction(std::pair<double, double> p, const double targetValue, const int train);
+        void updateWeights(const double targetValue, const double output, std::pair<double, double> p);
 
 };
 
