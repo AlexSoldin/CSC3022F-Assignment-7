@@ -3,6 +3,12 @@
 ## main.cpp
 
 
+## Perceptron.cpp
+
+
+## Perceptron.h
+
+
 ## Makefile
 The Makefile compiles and links all necessary files into the main executable. 
 

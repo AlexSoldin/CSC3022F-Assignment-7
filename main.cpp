@@ -50,55 +50,55 @@ int main(int argc, char * argv[]){
     bool test3 = iterate(input3,p11,p12,p2,0,1,1,0,1);
     bool test4 = iterate(input4,p11,p12,p2,1,1,0,0,1);
 
-    for(int i = 1; i < trainingSet.size(); i++){
-        cout << "--------------------------\nTraining Example " << i<< ":\n--------------------------\n";
-        bool train = iterate(trainingSet[i-1],p11,p12,p2,0,0,0,1,0);
+    for(int i = 0; i < trainingSet.size(); i++){
+        cout << "--------------------------\nTraining Example " << (i+1) << ":\n--------------------------\n";
+        bool train = iterate(trainingSet[i],p11,p12,p2,0,0,0,1,0);
         bool done1 = iterate(input1,p11,p12,p2,0,0,0,0,0);
         bool done2 = iterate(input2,p11,p12,p2,0,1,1,0,0);
         bool done3 = iterate(input3,p11,p12,p2,0,1,1,0,0);
         bool done4 = iterate(input4,p11,p12,p2,1,1,0,0,0);
         bool done = done1 && done2 && done3 && done4;
         if (done){
-            cout << "\nTrained After " << i << " Iterations\n\n";
+            cout << "\nTrained After " << (i+1) << " Iterations\n\n";
             break;
         } 
 
         i++;
-        cout << "--------------------------\nTraining Example " << i<< ":\n--------------------------\n";
-        train = iterate(trainingSet[i-1],p11,p12,p2,0,1,1,1,0);
+        cout << "--------------------------\nTraining Example " << (i+1) << ":\n--------------------------\n";
+        train = iterate(trainingSet[i],p11,p12,p2,0,1,1,1,0);
         done1 = iterate(input1,p11,p12,p2,0,0,0,0,0);
         done2 = iterate(input2,p11,p12,p2,0,1,1,0,0);
         done3 = iterate(input3,p11,p12,p2,0,1,1,0,0);
         done4 = iterate(input4,p11,p12,p2,1,1,0,0,0);
         done = done1 && done2 && done3 && done4;
         if (done){
-            cout << "\nTrained After " << i << " Iterations\n\n";
+            cout << "\nTrained After " << (i+1) << " Iterations\n\n";
             break;
         } 
 
         i++;
-        cout << "--------------------------\nTraining Example " << i<< ":\n--------------------------\n";
-        train = iterate(trainingSet[i-1],p11,p12,p2,0,1,1,1,0);
+        cout << "--------------------------\nTraining Example " << (i+1) << ":\n--------------------------\n";
+        train = iterate(trainingSet[i],p11,p12,p2,0,1,1,1,0);
         done1 = iterate(input1,p11,p12,p2,0,0,0,0,0);
         done2 = iterate(input2,p11,p12,p2,0,1,1,0,0);
         done3 = iterate(input3,p11,p12,p2,0,1,1,0,0);
         done4 = iterate(input4,p11,p12,p2,1,1,0,0,0);
         done = done1 && done2 && done3 && done4;
         if (done){
-            cout << "\nTrained After " << i << " Iterations\n\n";
+            cout << "\nTrained After " << (i+1) << " Iterations\n\n";
             break;
         } 
 
         i++;
-        cout << "--------------------------\nTraining Example " << i<< ":\n--------------------------\n";
-        train = iterate(trainingSet[i-1],p11,p12,p2,1,1,0,1,0);
+        cout << "--------------------------\nTraining Example " << (i+1) << ":\n--------------------------\n";
+        train = iterate(trainingSet[i],p11,p12,p2,1,1,0,1,0);
         done1 = iterate(input1,p11,p12,p2,0,0,0,0,0);
         done2 = iterate(input2,p11,p12,p2,0,1,1,0,0);
         done3 = iterate(input3,p11,p12,p2,0,1,1,0,0);
         done4 = iterate(input4,p11,p12,p2,1,1,0,0,0);
         done = done1 && done2 && done3 && done4;
         if (done){
-            cout << "\nTrained After " << i << " Iterations\n\n";
+            cout << "\nTrained After " << (i+1) << " Iterations\n\n";
             break;
         } 
     }
