@@ -1,0 +1,78 @@
+-------------------
+Question 1
+-------------------
+The minimum number of perceptrons required is 3.
+The diagram below shows how the perceptrons were connected.
+
+||          ||
+x1          x2
+|\          /|
+| \        / |
+|  \      /  |
+|   \    /   |
+|    \  /    |
+|     \/     |
+|     /\     |
+|    /  \    |
+|   /    \   |
+|  /      \  |
+P1          P2
+\            /
+ \          /
+  \        /
+   \      /
+    \    /
+      P3
+      ||
+
+Inputs - x1 and x2
+First layer perceptrons - P1 and P2
+Output layer perceptron - P3
+
+
+
+-------------------
+Question 2
+-------------------
+The training examples used were many repitions of the four possible binary combinations that an XOR function operates on. These are shown below.
+
+Input1  Input2  Output
+     0       0       0
+     1       0       1
+     0       1       1
+     1       1       0
+     0       0       0
+     1       0       1
+     0       1       1
+     1       1       0
+     0       0       0
+     1       0       1
+     0       1       1
+     1       1       0
+     0       0       0
+     1       0       1
+     0       1       1
+     1       1       0
+
+The ANN took 14 training examples to learn the XOR operation while using random weights and a learning rate of 0.8.
+Subsequent to each training iteration and updating of respective weights using the perception learning rule, the four binary combinations 
+were tested to determine if the outputs were correct. This happened on the 14th iteration.
+
+The ANN solved the XOR operation in 18 iterations using a learning rate of 0.6. A low learning rate and sufficiently large starting values may 
+require more than 20 training iterations to solve the XOR operation.
+
+-------------------
+Question 3
+-------------------
+
+
+-------------------
+Question 4
+-------------------
+
+
+
+-------------------
+Question 5
+-------------------
+
