@@ -27,9 +27,14 @@ P1          P2
 
 Inputs - x1 and x2
 First layer perceptrons - P1 and P2
+    P1 will be the weighted sum of x1 and x2 compared to a particular threshold value. P2 will be calculated using the same method.
+    Both will have possible output of 0 or 1.
+    The weighted sum of these outputs will be sent in to P3's threshold activation resulting in the final output.
+    P1 - OR gate
+    P2 - AND gate
+    Therefore, P3 will learn to assing XOR using AND(NOT AND, OR)
 Output layer perceptron - P3
-
-
+    Possible output of 0 or 1 as result of XOR
 
 -------------------
 Question 2

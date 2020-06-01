@@ -17,9 +17,9 @@ int main(int argc, char * argv[]){
     do
     {
         cout << "--------------------------\nChoose from the following:\n--------------------------" << endl;
-        cout << "0: Quit" << endl;
-        cout << "1: Question 1" << endl;
-        cout << "2: Question 2" << endl;
+        cout << "0 : Quit" << endl;
+        cout << "1 : Question 1" << endl;
+        cout << "2 : Question 2" << endl;
        
         cin >> choice;
 
