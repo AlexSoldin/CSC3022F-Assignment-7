@@ -8,10 +8,11 @@
 using namespace std;
 
 // Main Method
-int main(int argc, char * argv[]){
+int main(int argc, char *argv[])
+{
 
     TrainModel train;
-    
+
     // Menu
     int choice;
     do
@@ -20,15 +21,17 @@ int main(int argc, char * argv[]){
         cout << "0 : Quit" << endl;
         cout << "1 : Question 1" << endl;
         cout << "2 : Question 2" << endl;
-       
+
         cin >> choice;
 
-        if (choice == 1) train.XOR();
-        else if (choice == 2) train.XOR();
-        else if (choice) cout << "Invalid Choice. Please try again.\n" << endl;
+        if (choice == 1)
+            train.XOR();
+        else if (choice == 2)
+            train.XOR();
+        else if (choice)
+            cout << "Invalid Choice. Please try again.\n\n";
 
-    } while (choice != 0);    
+    } while (choice != 0);
 
     return 0;
-
 }
