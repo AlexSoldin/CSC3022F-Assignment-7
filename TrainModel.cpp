@@ -126,4 +126,16 @@ void TrainModel::FullyConnected()
     Perceptron p11(0.1, 0.2, 0.5, 0, 0.8, 0.1);
     Perceptron p12(-0.4, 1.0, -0.6, 0, 0.8, -0.3);
     Perceptron p2(0.8, 1.0, 0, 0, 0.8, -0.3);
+
+    double p11Output = p11.activationSigmoid({input1, input2, input3});
+    double p12Output = p12.activationSigmoid({input1, input2, input3});
+
+    cout << "Hidden Layer Perceptron 1: " << p11Output
+         << "\nHidden Layer Perceptron 2: " << p12Output << "\n\n";
+
+    double p2Output = p2.activationSigmoid({p11Output, p12Output});
+    cout << "Output Layer Perceptron: " << p2Output << "\n\n";
+
+    double MSE = pow(p2Output - 0.36, 2);
+    cout << "Mean Squared Error for ANN Input x: " << MSE << "\n\n";
 }

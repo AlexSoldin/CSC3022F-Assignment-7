@@ -31,19 +31,25 @@ double Perceptron::activationSigmoid(std::vector<double> values)
 {
     double result;
     int size = values.size();
+
+    double first;
+    double second;
+    double third;
+    double exponentTerm;
+
     switch (size)
     {
     case 2:
-        double first = values.at(0);
-        double second = values.at(1);
-        double exponentTerm = first * firstWeight + second * secondWeight + bias;
+        first = values.at(0);
+        second = values.at(1);
+        exponentTerm = first * firstWeight + second * secondWeight + bias;
         result = 1 / (1 + exp(-exponentTerm));
         break;
     case 3:
-        double first = values.at(0);
-        double second = values.at(1);
-        double third = values.at(2);
-        double exponentTerm = first * firstWeight + second * secondWeight + third * thirdWeight + bias;
+        first = values.at(0);
+        second = values.at(1);
+        third = values.at(2);
+        exponentTerm = first * firstWeight + second * secondWeight + third * thirdWeight + bias;
         result = 1 / (1 + exp(-exponentTerm));
         break;
     }

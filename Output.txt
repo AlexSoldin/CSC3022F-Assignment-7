@@ -69,15 +69,15 @@ require more than 20 training iterations to solve the XOR operation.
 -------------------
 Question 3
 -------------------
-
+Hidden Layer Perceptron 1: 0.763145
+Hidden Layer Perceptron 2: 0.802184
 
 -------------------
 Question 4
 -------------------
-
-
+Output Layer Perceptron: 0.752632
 
 -------------------
 Question 5
 -------------------
-
+Mean Squared Error for ANN Input x: 0.15416

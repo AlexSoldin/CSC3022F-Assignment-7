@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         if (choice == 1)
             train.XOR();
         else if (choice == 2)
-            train.XOR();
+            train.FullyConnected();
         else if (choice)
             cout << "Invalid Choice. Please try again.\n\n";
 
